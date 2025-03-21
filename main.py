@@ -28,19 +28,19 @@ async def answer_question(
     # Placeholder for LLM integration (to answer without file)
     # For now, return a static message.
     return {"answer": "LLM logic needs to be added here."}
-import openai
+#import openai
 
-def query_llm(question):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=question,
-        max_tokens=100
-    )
-    return response["choices"][0]["text"].strip()
-def generate_prompt(question, assignment_type=None):
-    base_prompt = "You are answering questions for graded assignments."
-    if assignment_type:
-        base_prompt += f" This question belongs to {assignment_type}."
-    return f"{base_prompt}\n\nQuestion: {question}\nAnswer:"
+#def query_llm(question):
+   # response = openai.Completion.create(
+    #    engine="text-davinci-003",
+     #   prompt=question,
+      #  max_tokens=100
+    #)
+    #return response["choices"][0]["text"].strip()
+#def generate_prompt(question, assignment_type=None):
+ #   base_prompt = "You are answering questions for graded assignments."
+  #  if assignment_type:
+   #     base_prompt += f" This question belongs to {assignment_type}."
+    # return f"{base_prompt}\n\nQuestion: {question}\nAnswer:"
 
 
