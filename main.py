@@ -28,9 +28,7 @@ async def answer_question(
     # Placeholder for LLM integration (to answer without file)
     # For now, return a static message.
     return {"answer": "LLM logic needs to be added here."}
-    if __name__=="__main__":
-        app.run()
-#import openai
+   
 
 #def query_llm(question):
    # response = openai.Completion.create(
